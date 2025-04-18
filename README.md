@@ -17,5 +17,16 @@ git clone https://github.com/maqvn/sudokuBot.git
 cd sudokuBot/codigo
 ```
 ```
+g++ main.cpp -o main
+```
+
+*Linux / max*
+
+```
 ./main
+```
+
+*Windows*
+```
+main.exe
 ```
