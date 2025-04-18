@@ -20,7 +20,7 @@ cd sudokuBot/codigo
 g++ main.cpp -o main
 ```
 
-*Linux / max*
+*Linux / macOS*
 
 ```
 ./main
