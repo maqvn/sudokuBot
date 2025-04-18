@@ -4,17 +4,17 @@
 
 ## Motivação
 
-**Um mini-projeto pessoal de férias para praticar lógica algorítimica.**
+** *Um mini-projeto pessoal de férias para praticar lógica algorítimica.* **
  
 ## Como Rodar
 
 **Abra o terminal e digite os seguintes comandos**
 
 ```
-git clone
+git clone https://github.com/maqvn/sudokuBot.git
 ```
 ```
-cd sudokuBot
+cd sudokuBot/codigo
 ```
 ```
 ./main
