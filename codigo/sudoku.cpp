@@ -26,9 +26,10 @@ void Sudoku::printGame() {
     cout << "_________________\n";
 }
 
-bool Sudoku::isValidDigit(int digit, int line, int column) {
+bool Sudoku::isValidDigit(int digit, int row, int column) {
+    
     for (int j = 0; j < 9; j++) {
-        if (gameMatrix[line * 9 + j] == digit) {
+        if (gameMatrix[row * 9 + j] == digit) {
             return false;
         }
     }
@@ -39,13 +40,14 @@ bool Sudoku::isValidDigit(int digit, int line, int column) {
         }
     }
 
-    int startRow = (line / 3) * 3;
+    int startRow = (row / 3) * 3;
     int startColumn = (column / 3) * 3;
 
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             int row = startRow + i;
             int column = startColumn + j;
+            
             if (gameMatrix[row * 9 + column] == digit) {
                 return false;
             }
