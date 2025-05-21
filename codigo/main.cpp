@@ -9,11 +9,10 @@ int main() {
     int game[9*9];
     string gameString;
 
-    cout << "Insira uma matriz de um jogo válido (no formato: 0, 1, 2, 0, ...)" << endl;
-    getline(cin, gameString);
+    cout << "Insira uma matriz de um jogo válido (no formato: 0 1 2 0 ...)" << endl;
 
     for(int i = 0; i < 81 ; i++) {
-        game[i] = stoi(gameString.substr(i*3 , 1));
+        cin >> game[i];
     }
 
     Sudoku sudokuGame(game);    
